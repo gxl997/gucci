@@ -69,11 +69,12 @@
                 <div class="tal">
                     <div class="tl_left">
                         <p>手机号码</p>
-                        <input type="text" value="请输入11位手机号码">
+                        <input type="text" value="请输入11位手机号码" class="goname">
+                        <p class="hide1">请输入正确的手机号码/电子邮箱</p>
                         <p class="p_two">短信验证码</p>
-                        <input type="text" value="请输入短信验证码" class="input_two">
+                        <input type="text" value="请输入短信验证码" class="input_two goupwd">
                         <a href="">发送验证码</a>
-                        <input type="button" value="登录" class="input_three">
+                        <input type="button" value="登录" class="input_three goIndex">
                         <a href="" class="a_two">密码登录</a>
                     </div>
                     <span></span>
@@ -104,24 +105,27 @@
                                <img src="images/loading.gif" alt="">
                            </h5>
                            <div class="tl">
-                                <p>手机号码</p>
-                                <input type="text" value="请输入11位手机号码">
-                                <p class="p_two">短信验证码</p>
-                                <input type="text" value="请输入短信验证码" class="input_two">
-                                <a href="" class="code">发送验证码</a>
-                                <p class="p_three">设置密码（非必填）</p>
-                                <input type="text" value="至少6个字符含数字大小写字母" class="input_three">
-                                <span class="sp"></span>
-                                <div class="box">
-                                    <input type="checkbox" class="smallInput">
-                                    <span>我愿意接收Gucci邮件获取新款推荐及更多内容</span>
-                                </div>
-                                <div class="box box1">
-                                    <input type="checkbox" class="smallInput">
-                                    <span>创建账户代表您已接受Gucci的<a href="">隐私政策</a>和<a href="">销售条款</a></span>
-                                </div>
-                                <input type="button" class="go" value="创建账户">
+                            <p>手机号码</p>
+                            <input type="text" value="请输入11位手机号码"  class="uname" >
+                            <p class="hideOne">请输入11位手机号码</p>
+                            <p class="p_two">短信验证码</p>
+                            <input type="text" value="请输入短信验证码" class="input_two">
+                            <a href="" class="code">发送验证码</a>
+                            <p class="hideTwo">请输入验证码</p>
+                            <p class="p_three">设置密码（非必填）</p>
+                            <input type="text" value="至少6个字符含数字大小写字母" class="input_three upwd">
+                            <span class="sp"></span>
+                            <P class="hide3">至少6个字符含数字大小写字母</P>
+                            <div class="box">
+                                <input type="checkbox" class="smallInput">
+                                <span>我愿意接收Gucci邮件获取新款推荐及更多内容</span>
                             </div>
+                            <div class="box box1">
+                                <input type="checkbox" class="smallInput">
+                                <span>创建账户代表您已接受Gucci的<a href="">隐私政策</a>和<a href="">销售条款</a></span>
+                            </div>
+                            <input type="button" class="go" value="创建账户">
+                        </div>
                         </div>
                     </div>
                 </div><!-- /.modal-content -->
@@ -209,6 +213,7 @@
         </div>
     <!-- js -->
     <script src="./js/jquery-1.12.4.min.min.js"></script>
+    <script src="./js/jquery.cookie.min.js"></script>
     <script src="./js/swiper-3.4.2.min.min.js"></script>
     <script src="./js/bootstrap.min.min.js"></script>
     <script src="./js/login.min.js"></script>

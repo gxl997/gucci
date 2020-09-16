@@ -54,6 +54,12 @@
           border: 0;
           outline: none;
         }
+        .hide1{
+          padding-top: 15px;
+        color: red;
+        display: none;
+        clear: both;
+        }
         .p_two {
           padding-top: 25px;
         }
@@ -140,13 +146,13 @@
 //模态框
 .bigContent {
   width: 600px;
-  height: 573px;
+  // height: 573px;
   padding: 20px;
   text-align: center;
   background-color: #fff;
   .smallContent {
     width: 560px;
-    height: 463px;
+    // height: 463px;
     padding: 20px 55px 0;
     h5 {
       font-size: 24px;
@@ -166,7 +172,7 @@
     }
     .tl {
       width: 450px;
-      height: 453px;
+      // height: 453px;
       padding: 30px 28px 0;
       p {
         font-size: 12px;
@@ -187,6 +193,11 @@
         outline: none;
         background-color: #f5f5f5;
       }
+      .hideOne{
+        padding-top: 15px;
+        color: red;
+        display: none;
+      }
       .p_two{
           margin-top: 30px;
       }
@@ -203,6 +214,12 @@
         float: left;
         line-height: 37px;
       }
+      .hideTwo{
+        padding-top: 15px;
+        color: red;
+        display: none;
+        clear: both;
+      }
       .p_three{
           clear: both;
          padding-top: 30px;
@@ -211,12 +228,21 @@
           width: 356px;
           float: left;
           margin-bottom: 15px;
+          border: 1px solid transparent;
+          border-right: 0;
       }
       .sp{
           display: inline-block;
           height: 37px;
           width: 37px;
           background-color: #f5f5f5;
+          border: 1px solid transparent;
+          border-left: 0;
+      }
+      .hide3{
+        color: red;
+        display: none;
+        clear: both;
       }
       .box{
           text-align: left;
