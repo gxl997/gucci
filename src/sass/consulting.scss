@@ -1,0 +1,69 @@
+@import'public';
+//展示区
+.photo_one{
+    position: relative;
+}
+.photo_one img{
+    width: 100%;
+}
+.photo_one .describe{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+}
+.big_box{
+    padding: 20px;
+}
+.photo_one .describe p{
+    font-size: 18px;
+    color: #fff;
+    letter-spacing: 1.5px;
+    line-height: 18px;
+    margin-bottom: 13px;
+}
+.photo_one .describe h1{
+    font-size: 56px;
+    color: #fff;
+    letter-spacing: 2px;
+    line-height: 56px;
+}
+.small_box .photo_one{
+    position: relative;
+}
+.small_box .small_title{
+    width: 100%;
+    height: 117px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.small_box .small_title  h2{
+    color: #ffffff;
+    letter-spacing: 2px;
+    font-size: 60px;
+    line-height: 66px;
+    // font-weight: 100;
+}
+.small_box .small_title input{
+    font-size: 12px;
+    height: 40px;
+    margin: 0 10px;
+    width: 128px;
+    margin-top: 20px;
+    letter-spacing: 1px;
+    background: #1b1b1b;
+    border: 2px solid #1b1b1b;
+    color: #e5dfd9;
+    cursor: pointer;
+    outline: none;
+}
+.small_box .small_title input:hover{
+    background: #313131;
+    border: 2px solid #313131;
+    color: #e5dfd9;
+}
