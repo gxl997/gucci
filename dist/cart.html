@@ -67,44 +67,6 @@
         <ul class="nav_bt">
             
             <li id="lisOne"><a href="consulting.html">全新咨询</a>
-                <!-- 小三角 -->
-                <div class="triangle"></div>
-                <!-- 二级菜单 -->
-                <div class="consult">
-                    
-                    <ul class="consultLeft">
-                            <h4>新品浏览</h4>
-                            <li><a href="">按修长款式选购</a></li>
-                            <li><a href="">Fake Not系列</a></li>
-                            <li><a href="">jackie 1961系列</a></li>
-                            <li><a href="">古驰华悦梦意系列</a></li>
-                    </ul>
-                    <ul class="consultCenter">
-                            <h4>观看视频</h4>
-                            <li><a href="">“终曲”时装系列</a></li>
-                            <li><a href="">2020秋冬女士系列</a></li>
-                            <li><a href="">2020秋冬男士系列</a></li>
-                            <li><a href="">2020春夏</a></li>
-                            <div class="swiper-container swiper-container-horizontal" id="swiper-container">
-                                <div class="swiper-wrapper" style="transform: translate3d(-4770px, 0px, 0px); transition-duration: 0ms;" id="swiper-wrapper">
-                                    <div class="swiper-slide"><img src="images/1.png" alt="" style="width: 350px;"></div>
-                                    <div class="swiper-slide"><img src="images/2.png" alt="" style="width: 350px;"></div>
-                                    <div class="swiper-slide"><img src="images/3.png" alt="" style="width: 350px;"></div>
-                                    <div class="swiper-slide"><img src="images/4.png" alt="" style="width: 350px;"></div>
-                                </div>
-                                <!-- Add Pagination -->
-                                <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets" id="swiper-pagination"><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span></div>
-                            </div>
-                    </ul>
-                    <ul class="consultRight">
-                        <h4>编辑精选</h4>
-                        <a href=""><img src="images/xie1.jpg" alt=""></a>
-                        <p>
-                            <a href="" class="one">配饰</a>
-                            <a href="">意料之外的风格领袖</a>
-                        </p>
-                    </ul>
-                </div>
             </li>
             <li><a href="">女士</a></li>
             <li><a href="">男士</a></li>
@@ -127,35 +89,6 @@
                 </a>
             </div>
             <li><a href="consulting.html">全新咨询</a>
-                <div class="triangle"></div>
-                <!-- 二级菜单 -->
-                <div class="consult">
-                    
-                    <ul class="consultLeft">
-                            <h4>新品浏览</h4>
-                            <li><a href="">按修长款式选购</a></li>
-                            <li><a href="">Fake Not系列</a></li>
-                            <li><a href="">jackie 1961系列</a></li>
-                            <li><a href="">古驰华悦梦意系列</a></li>
-                    </ul>
-                    <ul class="consultCenter">
-                            <h4>观看视频</h4>
-                            <li><a href="">“终曲”时装系列</a></li>
-                            <li><a href="">2020秋冬女士系列</a></li>
-                            <li><a href="">2020秋冬男士系列</a></li>
-                            <li><a href="">2020春夏</a></li>
-                            <div class="swiper-container swiper-container-horizontal" id="swiper-container">
-                                <div class="swiper-wrapper" style="transform: translate3d(-4770px, 0px, 0px); transition-duration: 0ms;" id="swiper-wrapper">
-                                    <div class="swiper-slide"><img src="images/1.png" alt="" style="width: 350px;"></div>
-                                    <div class="swiper-slide"><img src="images/2.png" alt="" style="width: 350px;"></div>
-                                    <div class="swiper-slide"><img src="images/3.png" alt="" style="width: 350px;"></div>
-                                    <div class="swiper-slide"><img src="images/4.png" alt="" style="width: 350px;"></div>
-                                </div>
-                                <!-- Add Pagination -->
-                                <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets" id="swiper-pagination"><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span></div>
-                            </div>
-                    </ul>
-                </div>
             </li>
             <li><a href="">女士</a></li>
             <li><a href="">男士</a></li>
@@ -176,6 +109,26 @@
         </ul>
     </div>
 
+
+      <!-- 添加商品后购物车样式 -->
+      <div class="bBox">
+        <div class="smallLogo">
+            <img src="images/favicon.png" alt="" style="width:50px; height: 50px;">
+        </div>
+        <div class="sBox">
+            <!-- 商品 -->
+            <div class="cartList">
+                <ul class="cartHead">
+                <li>缩略图</li>
+				<li>品名</li>
+				<li>单价</li>
+				<li>数量</li>
+				<li>小计</li>
+				<li>操作</li>
+                </ul>
+            </div>
+        </div>
+    </div>
              <!-- Swiper -->
 <div class="bigBox">
     <div class="swiper-container swiper-container-horizontal">
@@ -235,6 +188,7 @@
     </div>
 </div>
 
+  
 
          <!-- 底部 -->
          <div class="footer">
@@ -317,7 +271,7 @@
     <script src="./js/jquery-1.12.4.min.min.js"></script>
     <script src="./js/swiper-3.4.2.min.min.js"></script>
     <script src="./js/bootstrap.min.min.js"></script>
-    <script src="./js/public.js"></script>
+    <script src="./js/jquery.cookie.min.js"></script>
     <script src="./js/cart.min.js"></script>
 </body>
 </html>

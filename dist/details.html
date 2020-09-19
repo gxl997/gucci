@@ -9,60 +9,116 @@
     <link rel="stylesheet" href="./css/details.min.css">
 </head>
 <body>
-            <!-- 头部 -->
-            <div class="header">
-                <div class="nav_logo">
-                    <div class="nav_logo_top">
-                        <div class="navbar_lt">
-                        <a href="#"><span class="glyphicon glyphicon-map-marker"></span>中国大陆地区</a>
-                        <a href="#">简体中文</a>
-                        <a href="#">客户服务</a>
-                        <a href="#"><span class="glyphicon glyphicon-earphone"></span> 400.8210.582</a>
-                        </div>
-                        <a href="index.html">
-                            <img src="images/gucci-logo@2x.png" alt="" class="logo">
-                        </a>
-                        <div class="navbar_rt">
-                            <a href="#">登录</a>
-                            <a href=""><span class="glyphicon glyphicon-heart-empty"></span></a>
-                            <a href=""><span class="glyphicon glyphicon-lock"></span>购物袋</a>
-                            <a href="">
-                                <img src="images/ss.png" alt="" id="sousou">
-                            </a>
-                        </div>
-                    </div>
+              <!-- 划过中国大陆地区显示隐藏 -->
+ 
+     <div class="place">
+        <!-- 小三角 -->
+        <div class="triangle"></div>
+        <h6>网上商城</h6>
+        <p>请注意，在浏览过程中更改您的位置将会清除购物袋中的所有商品。</p>
+        <a href="" class="china">配送至：中国大陆地区</a>
+        <a href="">更改国家/地区></a>
+        <h6>直营店查询</h6>
+        <div class="select">
+            <select name="" id="">
+                <option value="" selected>请选择省</option>
+                <option value="">北京</option>
+                <option value="">上海</option>
+                <option value="">天津</option>
+                <option value="">山西省</option>
+                <option value="">河北省</option>
+            </select>
+            <select name="" id="">
+                <option value="" selected>请选择市</option>
+                <option value="">请选择市</option>
+            </select>
+        </div>
+        <a href="">
+            <p class="threeP"><span></span> 查找附近门店</p>
+        </a>
+    </div>
+
+    <!-- 头部 -->
+    <div class="header topHeader">
+        <div class="nav_logo">
+            <div class="nav_logo_top">
+                <div class="navbar_lt">
+                <a href="#" id="show"><span class="glyphicon glyphicon-map-marker"></span>中国大陆地区</a>
+                <a href="#">简体中文</a>
+                <a href="#">客户服务</a>
+                <a href="#"><span class="glyphicon glyphicon-earphone"></span> 400.8210.582</a>
                 </div>
-            </div>
-
-
-            <div class="header btHeader">
-                <ul class="nav_bt">
-                    <div class="navbar_lt">
-                        <a href="#"><span class="glyphicon glyphicon-map-marker"></span></a>
-                        <a href="#">
-                        <span class="glyphicon  glyphicon-earphone"></span> 400.8210.582
-                        </a>
-                    </div>
-                    <li><a href="consulting.html">全新咨询</a>
-                    </li>
-                    <li><a href="">女士</a></li>
-                    <li><a href="">男士</a></li>
-                    <li><a href="">童装</a></li>
-                    <li><a href="">礼品</a></li>
-                    <li><a href="">珠宝和腕表</a></li>
-                    <li><a href="">美妆</a></li>
-                    <li><a href="">家饰</a></li>
-                    <li><a href="">古驰故事</a></li>
-                    <div class="navbar_rt">
-                        <a href="login.html"><span class="glyphicon glyphicon-user"></span></a>
-                        <a href=""><span class="glyphicon glyphicon-heart-empty"></span></a>
-                        <a href="cart.html"><span class="glyphicon glyphicon-lock"></span></a>
-                        <a href="">
+                <a href="index.html">
+                    <img src="images/gucci-logo@2x.png" alt="" class="logo">
+                </a>
+                <div class="navbar_rt">
+                    <a href="login.html">登录</a>
+                    <a href=""><span class="glyphicon glyphicon-heart-empty"></span></a>
+                    <a href="cart.html"><span class="glyphicon glyphicon-lock"></span><input type="button" value="购物车(0)" id="buy"/></a>
+                    <a href="">
                         <img src="images/ss.png" alt="" id="sousou">
                     </a>
-                    </div>
-                </ul>
+                </div>
             </div>
+        </div>
+        <ul class="nav_bt">
+            
+            <li><a href="consulting.html">全新咨询</a></li>
+            <li><a href="">女士</a></li>
+            <li><a href="">男士</a></li>
+            <li><a href="">童装</a></li>
+            <li><a href="">礼品</a></li>
+            <li><a href="">珠宝和腕表</a></li>
+            <li><a href="">美妆</a></li>
+            <li><a href="">家饰</a></li>
+            <li><a href="">古驰故事</a></li>
+            
+        </ul>
+    </div>
+
+    <div class="header btHeader">
+        <ul class="nav_bt">
+            <div class="navbar_lt">
+                <a href="#"><span class="glyphicon glyphicon-map-marker"></span></a>
+                <a href="#">
+                <span class="glyphicon  glyphicon-earphone"></span> 400.8210.582
+                </a>
+            </div>
+            <li><a href="consulting.html">全新咨询</a> </li>
+            <li><a href="">女士</a></li>
+            <li><a href="">男士</a></li>
+            <li><a href="">童装</a></li>
+            <li><a href="">礼品</a></li>
+            <li><a href="">珠宝和腕表</a></li>
+            <li><a href="">美妆</a></li>
+            <li><a href="">家饰</a></li>
+            <li><a href="">古驰故事</a></li>
+            <div class="navbar_rt">
+                <a href="login.html"><span class="glyphicon glyphicon-user"></span></a>
+                <a href=""><span class="glyphicon glyphicon-heart-empty"></span></a>
+                <a href="cart.html" id="buy"><span class="glyphicon glyphicon-lock"></span></a>
+                <a href="">
+                <img src="images/ss.png" alt="" id="sousou">
+            </a>
+            </div>
+        </ul>
+    </div>
+
+    <!-- 页面布局 -->
+    <div class="main">
+        <div class="imgs">
+            <img src="images/sp1.jpg" alt="" style="width: 700px; height: 700px;" class="bigImg">
+        </div>
+        <div class="goodList">
+            <div class="goodInfo" data-good-id="sp1">
+				<span class="uname">Gucci Bloom花悦梦意100毫升女士香水</span>
+                <span class="two">￥1,330</span>
+                <b>款号628572 99999 0099</b>
+                <p class="sort"> 香水</p>
+				<input type="button" name="" id="" value="加入购物车" class="addToCart"/>
+			</div>
+        </div>
+    </div>
 
          <!-- 底部 -->
          <div class="footer">
@@ -145,6 +201,7 @@
     <script src="./js/jquery-1.12.4.min.min.js"></script>
     <script src="./js/swiper-3.4.2.min.min.js"></script>
     <script src="./js/bootstrap.min.min.js"></script>
-    <script src="./js/details.js"></script>
+    <script src="./js/jquery.cookie.min.js"></script>
+    <script src="./js/details.min.js"></script>
 </body>
 </html>

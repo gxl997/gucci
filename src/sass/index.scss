@@ -1,11 +1,15 @@
 @import "public";
-// banner轮播
-
+// 导航小banner轮播
+#swiper-wrapper .swiper-slide img{
+  position: absolute;
+  left: 0;
+  top: 35%;
+}
+#swiper-container #swiper-pagination{
+  top: 80%;
+}
 
 // 免费标准配送
-.swiper-container {
-  position: relative;
-}
 #banner_herf {
   position: absolute;
   right: 50px;

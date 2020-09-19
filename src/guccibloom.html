@@ -10,12 +10,41 @@
     <link rel="stylesheet" href="./css/guccibloom.min.css">
 </head>
 <body>
-       <!-- 头部 -->
-       <div class="header">
+           <!-- 划过中国大陆地区显示隐藏 -->
+ 
+     <div class="place">
+        <!-- 小三角 -->
+        <div class="triangle"></div>
+        <h6>网上商城</h6>
+        <p>请注意，在浏览过程中更改您的位置将会清除购物袋中的所有商品。</p>
+        <a href="" class="china">配送至：中国大陆地区</a>
+        <a href="">更改国家/地区></a>
+        <h6>直营店查询</h6>
+        <div class="select">
+            <select name="" id="">
+                <option value="" selected>请选择省</option>
+                <option value="">北京</option>
+                <option value="">上海</option>
+                <option value="">天津</option>
+                <option value="">山西省</option>
+                <option value="">河北省</option>
+            </select>
+            <select name="" id="">
+                <option value="" selected>请选择市</option>
+                <option value="">请选择市</option>
+            </select>
+        </div>
+        <a href="">
+            <p class="threeP"><span></span> 查找附近门店</p>
+        </a>
+    </div>
+
+    <!-- 头部 -->
+    <div class="header topHeader">
         <div class="nav_logo">
             <div class="nav_logo_top">
                 <div class="navbar_lt">
-                <a href="#"><span class="glyphicon glyphicon-map-marker"></span>中国大陆地区</a>
+                <a href="#" id="show"><span class="glyphicon glyphicon-map-marker"></span>中国大陆地区</a>
                 <a href="#">简体中文</a>
                 <a href="#">客户服务</a>
                 <a href="#"><span class="glyphicon glyphicon-earphone"></span> 400.8210.582</a>
@@ -24,7 +53,7 @@
                     <img src="images/gucci-logo@2x.png" alt="" class="logo">
                 </a>
                 <div class="navbar_rt">
-                    <a href="#">登录</a>
+                    <a href="login.html">登录</a>
                     <a href=""><span class="glyphicon glyphicon-heart-empty"></span></a>
                     <a href=""><span class="glyphicon glyphicon-lock"></span>购物袋</a>
                     <a href="">
@@ -33,8 +62,59 @@
                 </div>
             </div>
         </div>
+        <ul class="nav_bt">
+            
+            <li><a href="consulting.html">全新咨询</a>
+                <!-- 小三角 -->
+                <div class="triangle"></div>
+                <!-- 二级菜单 -->
+                <div class="consult">
+                    
+                    <ul class="consultLeft">
+                            <h4>新品浏览</h4>
+                            <li><a href="">按修长款式选购</a></li>
+                            <li><a href="">Fake Not系列</a></li>
+                            <li><a href="">jackie 1961系列</a></li>
+                            <li><a href="">古驰华悦梦意系列</a></li>
+                    </ul>
+                    <ul class="consultCenter">
+                            <h4>观看视频</h4>
+                            <li><a href="">“终曲”时装系列</a></li>
+                            <li><a href="">2020秋冬女士系列</a></li>
+                            <li><a href="">2020秋冬男士系列</a></li>
+                            <li><a href="">2020春夏</a></li>
+                            <div class="swiper-container swiper-container-horizontal" id="swiper-container" style="width: 350px;">
+                                <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms; width: 350px;" id="swiper-wrapper">
+                                    <div class="swiper-slide" style="width: 350px;"><img src="images/1.png" alt="" style="width: 350px;"></div>
+                                    <div class="swiper-slide" style="width: 350px;"><img src="images/2.png" alt="" style="width: 350px;"></div>
+                                    <div class="swiper-slide" style="width: 350px;"><img src="images/3.png" alt="" style="width: 350px;"></div>
+                                    <div class="swiper-slide" style="width: 350px;"><img src="images/4.png" alt="" style="width: 350px;"></div>
+                                </div>
+                                <!-- Add Pagination -->
+                                <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets" id="swiper-pagination"><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span></div>
+                            </div>
+                    </ul>
+                    <ul class="consultRight">
+                        <h4>编辑精选</h4>
+                        <a href=""><img src="images/xie1.jpg" alt=""></a>
+                        <p>
+                            <a href="" class="one">配饰</a>
+                            <a href="">意料之外的风格领袖</a>
+                        </p>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="">女士</a></li>
+            <li><a href="">男士</a></li>
+            <li><a href="">童装</a></li>
+            <li><a href="">礼品</a></li>
+            <li><a href="">珠宝和腕表</a></li>
+            <li><a href="">美妆</a></li>
+            <li><a href="">家饰</a></li>
+            <li><a href="">古驰故事</a></li>
+            
+        </ul>
     </div>
-
 
     <div class="header btHeader">
         <ul class="nav_bt">
@@ -45,6 +125,35 @@
                 </a>
             </div>
             <li><a href="consulting.html">全新咨询</a>
+                <div class="triangle"></div>
+                <!-- 二级菜单 -->
+                <div class="consult">
+                    
+                    <ul class="consultLeft">
+                            <h4>新品浏览</h4>
+                            <li><a href="">按修长款式选购</a></li>
+                            <li><a href="">Fake Not系列</a></li>
+                            <li><a href="">jackie 1961系列</a></li>
+                            <li><a href="">古驰华悦梦意系列</a></li>
+                    </ul>
+                    <ul class="consultCenter">
+                            <h4>观看视频</h4>
+                            <li><a href="">“终曲”时装系列</a></li>
+                            <li><a href="">2020秋冬女士系列</a></li>
+                            <li><a href="">2020秋冬男士系列</a></li>
+                            <li><a href="">2020春夏</a></li>
+                            <div class="swiper-container swiper-container-horizontal" id="swiper-container" style="width: 350px;">
+                                <div class="swiper-wrapper" style="transform: translate3d(-4770px, 0px, 0px); transition-duration: 0ms; width: 350px;" id="swiper-wrapper">
+                                    <div class="swiper-slide" style="width: 350px;"><img src="images/1.png" alt="" style="width: 350px;"></div>
+                                    <div class="swiper-slide" style="width: 350px;"><img src="images/2.png" alt="" style="width: 350px;"></div>
+                                    <div class="swiper-slide" style="width: 350px;"><img src="images/3.png" alt="" style="width: 350px;"></div>
+                                    <div class="swiper-slide" style="width: 350px;"><img src="images/4.png" alt="" style="width: 350px;"></div>
+                                </div>
+                                <!-- Add Pagination -->
+                                <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets" id="swiper-pagination"><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span></div>
+                            </div>
+                    </ul>
+                </div>
             </li>
             <li><a href="">女士</a></li>
             <li><a href="">男士</a></li>
@@ -88,7 +197,7 @@
                     <p>Gucci Bloom花悦女士香水系列
                     </p>
                     <i>Gucci Bloom花悦女士香水系列开启全新篇章——全新Gucci Bloom Profumo di Fiori花悦梦意女士香水如同一簇绽放的花朵，如同置身于一个充满想象力与魔力的梦幻花园。</i>
-                    <a href="">点击购买 ></a>
+                    <a href="details.html">点击购买 ></a>
                 </div>
                 <span></span>
                 <div class="main_right main_left">

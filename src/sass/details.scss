@@ -2,3 +2,70 @@
 .header{
     background: rgba(0,0,0,.2);
 }
+.main{
+    background: #e6e6e6;
+    width: 100%;
+    overflow: hidden;
+}
+.imgs{
+    width: 700px;
+    float: left;
+}
+.goodList{
+    width: 400px;
+    padding: 20px;
+    float: right;
+    margin-top: 200px;
+    margin-right: 200px;
+}
+.goodInfo{
+    width: 300px;
+    span{
+        display: block;
+        font-size: 20px;
+        color: #1b1b1b;
+        letter-spacing: 2px;
+        margin: 10px 0;
+    }
+    .two{
+        border-bottom: 1px solid  rgb(199, 194, 194);
+        padding-bottom: 20px;
+    }
+    b{
+        display: block;
+        font-size: 12px;
+        color: #888;
+        letter-spacing: 0;
+        font-weight: 300;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    .sort{
+        width: 100%;
+        border: 1px solid rgb(199, 194, 194);
+        height: 40px;
+        line-height: 40px;
+        color: #000;
+        font-size: 14px;
+        text-indent: 30px;
+        cursor: pointer;
+        margin-bottom: 40px;
+    }
+}
+.addToCart{
+    display: block;
+    background: #1b1b1b;
+    border: 2px solid #1b1b1b;
+    color: #e5dfd9;
+    width: 300px;
+    padding: 0 5px;
+    height: 40px;
+    line-height: 36px;
+    font-size: 12px;
+    text-align: center;
+}
+#buy{
+    background: transparent;
+    outline: none;
+    border: 0;
+}
