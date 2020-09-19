@@ -18,6 +18,78 @@ img{
 	border: none;
 	display: block;
 }
+
+//轮播
+html,
+body {
+  position: relative;
+  // height: 100%;
+}
+body {
+  background: #ffffff;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+}
+
+
+
+//轮播
+.swiper-container {
+  width: 100%;
+  height: 500px;
+}
+.swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.swiper-slide img {
+  width: 100%;
+}
+.swiper-slide .small_title {
+  width: 100%;
+  height: 117px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+.swiper-slide h2 {
+  color: #ffffff;
+  letter-spacing: 2px;
+  font-size: 56px;
+  line-height: 56px;
+  font-weight: 100;
+  // z-index:2;
+}
+.swiper-slide input {
+  height: 40px;
+  margin: 0 10px;
+  width: 145px;
+  margin-top: 11px;
+  letter-spacing: 1px;
+  background: #1b1b1b;
+  border: 2px solid #1b1b1b;
+  color: #e5dfd9;
+  cursor: pointer;
+  outline: none;
+}
+//轮播小圆点
+.swiper-pagination-bullet {
+  opacity: 1;
+  background: #ffffff;
+}
 //头部
 .header{
     height: 120px;
@@ -27,14 +99,19 @@ img{
     top: 0;
     z-index: 3;
     padding: 0 20px;
-    background: rgba(0,0,0,0);
+	background: rgba(0,0,0,0);
+	
 }
 .header:hover{
     background: rgba(0,0,0,1);
 }
 .header .nav_logo{
     height: 69px;
-    width: 100%;
+	width: 100%;
+	position: relative;
+	left: 0;
+	top: 0;
+	z-index: 1001;
     overflow: hidden;
 }
 .header .nav_logo .nav_logo_top .logo{
@@ -43,7 +120,7 @@ img{
     position: absolute;
     left: 50%;
     top: 0;
-    transform: translateX(-50%);
+	transform: translateX(-50%);
 }
 .header .nav_logo_top{
     position: relative;
@@ -57,10 +134,11 @@ img{
     float: left;
     color: #fff;
     font-size: 12px;
-    margin: 0 10px;
+	margin: 0 10px;
 }
 .header .navbar_lt a:hover{
-    text-decoration: none;
+	text-decoration: none;
+	
 }
 .header .navbar_lt .glyphicon{
     font-size: 12px;
@@ -91,10 +169,8 @@ img{
     height: 30px;
     float: right;
 }
-//头部左右默认隐藏
-.header .nav_bt .navbar_lt,.header .nav_bt .navbar_rt{
-	display: none;
-}
+
+
 //导航
 .nav_bt{
     width: 100%;
@@ -102,34 +178,181 @@ img{
     justify-content: center;
     padding-top: 5px;
     font-size: 12px;
-    position: relative;
+	position: relative;
 }
-.header .nav_bt .navbar_lt{
+ .nav_bt .navbar_lt{
     position: absolute;
     left: 0;
 }
-.header .nav_bt .navbar_rt{
+ .nav_bt .navbar_rt{
     width: 140px;
     position: absolute;
     right: 0;
 }
-.header .nav_bt .navbar_rt #sousou{
+ .nav_bt .navbar_rt #sousou{
     margin-top: -10px;
 }
-.nav_bt li{
-    float: left;
+.nav_bt>li{
+	float: left;
+	position: relative;
 }
 .nav_bt li a{
     font-size: 14px;
     color: #fff;
-    padding: 0 15px;
+	padding: 0 15px;
+	height: 51px;
 }
-.header .nav_bt a:hover{
+.nav_bt li:nth-of-type(1):hover .triangle{
+	display: block;
+}
+.nav_bt li:nth-of-type(1):hover .consult{
+	// display: block;
+	// z-index: 200;
+	background: rgba(255,255,255,.9);
+	opacity: 90;
+	transition: all 1s;
+}
+ .nav_bt a:hover{
     color: #fff;
 	text-decoration: none;
 }
-.header .nav_bt a:hover span{
+ .nav_bt a:hover span{
     color: #fff;
+}
+
+//全新咨询二级菜单
+
+//导航栏的轮播图
+#swiper-container{
+	position: absolute;
+	left: 40%;
+	top: -20%;
+	// z-index: 9999;
+	margin-top: 100px;
+}
+#swiper-pagination{
+	position: absolute;
+	left: 0;
+	top: 80%;
+	// z-index: 9999;
+	.swiper-slide{
+		position: absolute;
+	}
+}
+#swiper-wrapper{
+	position: absolute;
+	left: 0;
+	img{
+		width: 350px;
+	}
+	// z-index: 9999;
+}
+//导航下的小三角
+
+.nav_bt{
+	.triangle {
+		border: 5px solid transparent;
+		border-bottom-color: #fff;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-5px, -5px);
+		display: none;
+	}
+}
+.consult{
+	width: 1400px;
+	position: absolute;
+	top: 48px;
+	left: 305px;
+	transform: translateX(-50%);
+	background: #ffffff;
+	height: 240px;
+	padding: 20px;
+	z-index: 200;
+	background: rgba(255,255,255,0);
+	opacity: 0;
+	// display: none;
+	transition: 1s;
+	a:hover{
+		color: rgb(88, 88, 88);
+	}
+	
+	h4{
+		font-size: 13px;
+		color: #1b1b1b;
+		font-weight: 900;
+		margin-bottom: 20px;
+	}
+	li{
+		height: 20px;
+		margin: 10px 0;
+		a{
+			color: rgb(88, 88, 88);
+			font-size: 12px;
+			line-height: 10px;
+			height: 20px;
+			padding: 0;
+			margin: 0;
+			font-weight: 500;
+			letter-spacing: .5;
+		}
+	}
+	.consultLeft{
+		width: 15%;
+		float: left;
+		margin-left: 200px;
+	}
+	.consultCenter{
+		width: 40%;
+		padding: 0 30px 20px;
+		border-left: 1px solid #999;
+		border-right: 1px solid #999;
+		height: 100%;
+		float: left;
+		li{
+			width: 75px;
+			margin: 15px 0;
+		}
+	}
+	.consultRight{
+		padding-left: 30px;
+		float: left;
+		width: 16%;
+		a{
+			padding: 0;
+			img{
+				float: left;
+				width: 70px;
+				height: 70px;
+			}
+			
+		}
+		p{
+			float: right;
+			a{
+				display: block;
+				font-size: 12px;
+				color: rgb(88, 88, 88);
+				height: 20px;
+			}
+			.one{
+				color: #1b1b1b;
+				font-weight: 700;
+			}
+		}
+	}
+}
+
+//头部下半部分默认隐藏
+.btHeader{
+	padding-top: 20px;
+	height: 51px;
+	display: none;
+	position: fixed;
+	left:0;
+	top: 0;
+	z-index: 101;
 }
 //底部
 .footer{
@@ -361,3 +584,71 @@ img{
 	color: #e5dfd9;
 	font-size: 10px;
 }
+
+
+//划过中国大陆地区显示隐藏
+.place {
+	width: 330px;
+	height: 300px;
+	background: #ffffff;
+	position: absolute;
+	left: 30px;
+	top: 60px;
+	z-index: 100;
+	padding: 25px;
+	display: none;
+
+	//小三角
+	.triangle {
+	  border: 5px solid transparent;
+	  border-bottom-color: #fff;
+	  position: absolute;
+	  left: 20px;
+	  top: -10px;
+	}
+	h6 {
+	  padding: 20px 0;
+	  font-size: 13px;
+	}
+	p {
+	  font-size: 12px;
+	  color: #757575;
+	}
+	.china {
+	  font-size: 12px;
+	  color: #757575;
+	  margin: 20px 0;
+	  padding-right: 15px;
+	  border-right: 1px solid #757575;
+	}
+	a {
+	  font-size: 12px;
+	  color: #757575;
+	  margin-left: 15px;
+	}
+	a:hover {
+	  text-decoration: none;
+	}
+	.select {
+	  select {
+		height: 30px;
+		width: 130px;
+		font-size: 12px;
+		color: #757575;
+		background: rgb(228, 226, 226);
+		outline: none;
+	  }
+	}
+	.threeP {
+	  margin-left: -15px;
+	  margin-top: 10px;
+	  line-height: 20px;
+	  span {
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		background: url(../images/icon.png) no-repeat;
+		background-position: 0 -206px;
+	  }
+	}
+  }
